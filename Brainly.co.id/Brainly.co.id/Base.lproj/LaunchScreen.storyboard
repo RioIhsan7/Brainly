@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="BRAIN.png" translatesAutoresizingMaskIntoConstraints="NO" id="nOk-5b-RUb">
+                                <rect key="frame" x="0.0" y="213" width="375" height="143"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="gPO-gD-IUZ"/>
+                                    <constraint firstAttribute="height" constant="143" id="w2p-8N-imd"/>
+                                </constraints>
+                            </imageView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="YAx-Ed-CYI">
+                                <rect key="frame" x="112" y="364" width="150" height="2"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="150" id="DaT-tz-pxO"/>
+                                    <constraint firstAttribute="height" constant="2" id="Tni-9W-goF"/>
+                                </constraints>
+                                <color key="progressTintColor" red="0.99193536760000001" green="1" blue="0.98987274069999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="trackTintColor" red="1" green="0.80000001190000003" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </progressView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="YAx-Ed-CYI" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="96" id="0su-ZT-CpN"/>
+                            <constraint firstItem="nOk-5b-RUb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="5xs-Ys-edm"/>
+                            <constraint firstItem="nOk-5b-RUb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="193" id="KYC-W0-nyw"/>
+                            <constraint firstItem="nOk-5b-RUb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="d7q-2N-3ef"/>
+                            <constraint firstItem="YAx-Ed-CYI" firstAttribute="top" secondItem="nOk-5b-RUb" secondAttribute="bottom" constant="8" id="iWN-Q8-wuf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="YAx-Ed-CYI" secondAttribute="trailing" constant="97" id="mO5-s0-n2p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="YAx-Ed-CYI" secondAttribute="bottom" constant="301" id="wqC-jq-b5U"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="BRAIN.png" width="3575" height="1600"/>
+    </resources>
+</document>
